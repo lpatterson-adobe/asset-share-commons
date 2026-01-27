@@ -1,5 +1,5 @@
 const merge                   = require('webpack-merge');
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CssMinimizerPlugin      = require("css-minimizer-webpack-plugin");
 const TerserPlugin            = require('terser-webpack-plugin');
 const common                  = require('./webpack.common.js');
 
@@ -8,9 +8,8 @@ module.exports = merge(common, {
    optimization: {
       minimizer: [
           new TerserPlugin(),
-          new OptimizeCSSAssetsPlugin({
-              cssProcessorPluginOptions: {
-                  cssProcessor: require('cssnano'),
+          new CssMinimizerPlugin({
+              minimizerOptions: {
                   preset: ['default', {
                       calc: true,
                       convertValues: true,
@@ -25,7 +24,6 @@ module.exports = merge(common, {
                       svgo: true
                   }],
               },
-              canPrint: false
           })
       ],
       splitChunks: {
