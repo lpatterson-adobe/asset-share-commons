@@ -1,4 +1,4 @@
-const merge                   = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const CssMinimizerPlugin      = require("css-minimizer-webpack-plugin");
 const TerserPlugin            = require('terser-webpack-plugin');
 const common                  = require('./webpack.common.js');
@@ -30,6 +30,6 @@ module.exports = merge(common, {
         chunks: 'all'
       }
    },
-   devtool: 'none',
+    devtool: 'source-map',
    performance: {hints: false}
 });

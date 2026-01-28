@@ -8,7 +8,8 @@ const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
 module.exports = {
         resolve: {
             alias: {
-                '../../theme.config$': path.join(__dirname, 'semanticui/theme.config')  
+                '../../theme.config$': path.join(__dirname, 'semanticui/theme.config'),
+                'theme.config$': path.join(__dirname, 'semanticui/theme.config')
             }
         },
         entry: {
@@ -38,20 +39,38 @@ module.exports = {
                  // this rule handles images
                 {
                     test: /\.jpe?g$|\.gif$|\.ico$|\.png$|\.svg$/,
-                    use: 'file-loader?name=../resources/images/[name].[ext]?[hash]'
+                    use: {
+                        loader: 'file-loader',
+                        options: {
+                            name: '../resources/images/[name].[ext]?[hash]'
+                        }
+                    }
                 },
                 // the following 3 rules handle font extraction
                 {
                     test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                    loader: 'file-loader?name=../resources/fonts/[name].[ext]&mimetype=application/font-woff'
+                    loader: 'file-loader',
+                    options: {
+                        name: '../resources/fonts/[name].[ext]',
+                        mimetype: 'application/font-woff'
+                    }
                 },
                 {
                     test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                    loader: 'file-loader?name=../resources/fonts/[name].[ext]'
+                    loader: 'file-loader',
+                    options: {
+                        name: '../resources/fonts/[name].[ext]'
+                    }
                 },
                 {
                 test: /\.otf(\?.*)?$/,
-                use: 'file-loader?name=../resources/fonts/[name].[ext]&mimetype=application/font-otf'
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '../resources/fonts/[name].[ext]',
+                        mimetype: 'application/font-otf'
+                    }
+                }
                 }
             ]
         },
