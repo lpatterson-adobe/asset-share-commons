@@ -10,7 +10,9 @@
   "main": "src/index.js",
   "license": "SEE LICENSE IN LICENSE.txt",
   "scripts": {
+    "predev": "node ./scripts/sync-fomantic-theme-config.js",
     "dev": "webpack -d --env dev --config ./webpack.dev.js && clientlib --verbose",
+    "preprod": "node ./scripts/sync-fomantic-theme-config.js",
     "prod": "webpack --config ./webpack.prod.js && clientlib --verbose",
     "start": "webpack-dev-server --open --config ./webpack.dev.js"
   },

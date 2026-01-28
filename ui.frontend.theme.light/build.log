@@ -1,0 +1,71 @@
+
+> aem-maven-archetype@1.0.0 preprod
+> node ./scripts/sync-fomantic-theme-config.js
+
+
+> aem-maven-archetype@1.0.0 prod
+> webpack --config ./webpack.prod.js && clientlib --verbose
+
+assets by status 770 KiB [emitted]
+  assets by info 2.04 KiB [immutable] 26 assets
+  assets by path semanticui-theme/ 768 KiB
+    asset semanticui-theme/css/902.bundle.css 410 KiB [emitted] [minimized] [big] (id hint: vendors) 1 related asset
+    asset semanticui-theme/js/902.bundle.js 356 KiB [emitted] [minimized] [big] (id hint: vendors) 2 related assets
+    asset semanticui-theme/js/site.bundle.js 1.51 KiB [emitted] [minimized] (name: site) 1 related asset
+assets by status 3.8 MiB [compared for emit]
+  assets by path ../resources/fonts/*.woff 1.81 MiB 12 assets
+  assets by path ../resources/fonts/*.woff2 1.17 MiB
+    asset ../resources/fonts/Lato-Bold.woff2 175 KiB [compared for emit] [from: node_modules/fomantic-ui-less/themes/default/assets/fonts/Lato-Bold.woff2]
+    + 11 assets
+  asset ../resources/fonts/LatoWeb.eot 248 KiB [compared for emit] [from: semanticui/site/assets/fonts/LatoWeb.eot] [big]
+  asset ../resources/fonts/LatoWeb.ttf 593 KiB [compared for emit] [from: semanticui/site/assets/fonts/LatoWeb.ttf] [big]
+Entrypoint site [big] 768 KiB (4.47 MiB) = semanticui-theme/css/902.bundle.css 410 KiB semanticui-theme/js/902.bundle.js 356 KiB semanticui-theme/js/site.bundle.js 1.51 KiB 3 auxiliary assets
+2026-01-28 12:20:44: webpack 5.104.1 compiled successfully in 4820 ms
+
+start aem-clientlib-generator
+  working directory: /Users/lpatterson/Desktop/AGS2631/AdobeAGS2631Program-p161955-uk75528/asset-share-commons/ui.frontend.theme.light
+
+
+processing clientlib: semanticui-light
+Write node configuration using serialization format: xml
+write clientlib json file: ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/.content.xml
+
+write clientlib asset txt file (type: js): ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/js.txt
+copy: dist/semanticui-theme/js/site.bundle.js ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/js/site.bundle.js
+
+write clientlib asset txt file (type: css): ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/css.txt
+copy: resources/fonts/brand-icons.eot ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/brand-icons.eot
+copy: resources/fonts/brand-icons.ttf ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/brand-icons.ttf
+copy: resources/fonts/brand-icons.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/brand-icons.woff
+copy: resources/fonts/brand-icons.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/brand-icons.woff2
+copy: resources/fonts/icons.eot ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/icons.eot
+copy: resources/fonts/icons.ttf ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/icons.ttf
+copy: resources/fonts/icons.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/icons.woff
+copy: resources/fonts/icons.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/icons.woff2
+copy: resources/fonts/Lato-Bold.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/Lato-Bold.woff
+copy: resources/fonts/Lato-Bold.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/Lato-Bold.woff2
+copy: resources/fonts/Lato-BoldItalic.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/Lato-BoldItalic.woff
+copy: resources/fonts/Lato-BoldItalic.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/Lato-BoldItalic.woff2
+copy: resources/fonts/Lato-Italic.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/Lato-Italic.woff
+copy: resources/fonts/Lato-Italic.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/Lato-Italic.woff2
+copy: resources/fonts/Lato-Regular.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/Lato-Regular.woff
+copy: resources/fonts/Lato-Regular.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/Lato-Regular.woff2
+copy: resources/fonts/LatoLatin-Bold.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoLatin-Bold.woff
+copy: resources/fonts/LatoLatin-Bold.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoLatin-Bold.woff2
+copy: resources/fonts/LatoLatin-BoldItalic.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoLatin-BoldItalic.woff
+copy: resources/fonts/LatoLatin-BoldItalic.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoLatin-BoldItalic.woff2
+copy: resources/fonts/LatoLatin-Italic.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoLatin-Italic.woff
+copy: resources/fonts/LatoLatin-Italic.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoLatin-Italic.woff2
+copy: resources/fonts/LatoLatin-Regular.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoLatin-Regular.woff
+copy: resources/fonts/LatoLatin-Regular.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoLatin-Regular.woff2
+copy: resources/fonts/LatoWeb.eot ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoWeb.eot
+copy: resources/fonts/LatoWeb.ttf ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoWeb.ttf
+copy: resources/fonts/LatoWeb.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoWeb.woff
+copy: resources/fonts/LatoWeb.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/LatoWeb.woff2
+copy: resources/fonts/outline-icons.eot ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/outline-icons.eot
+copy: resources/fonts/outline-icons.ttf ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/outline-icons.ttf
+copy: resources/fonts/outline-icons.woff ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/outline-icons.woff
+copy: resources/fonts/outline-icons.woff2 ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/fonts/outline-icons.woff2
+copy: resources/images/brand-icons.svg ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/images/brand-icons.svg
+copy: resources/images/icons.svg ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/images/icons.svg
+copy: resources/images/outline-icons.svg ../ui.apps/src/main/content/jcr_root/apps/asset-share-commons/clientlibs/clientlib-theme/semanticui-light/resources/images/outline-icons.svg

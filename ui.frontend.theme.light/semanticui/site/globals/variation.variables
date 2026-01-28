@@ -3,6 +3,7 @@
 ***********************************************************/
 
 /* General */
+@variationAllColors: false;
 
 /*******************************
            Elements
@@ -222,7 +223,7 @@
 @variationFormDisabled: true;
 @variationFormTransparent: false;
 @variationFormLoading: true;
-@variationFormStates: true;
+@variationFormStates: @variationAllStates;
 @variationFormRequired: true;
 @variationFormInline: true;
 @variationFormGrouped: true;

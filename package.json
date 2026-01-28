@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "aem-clientlib-generator": "^1.6.0"
+  }
+}

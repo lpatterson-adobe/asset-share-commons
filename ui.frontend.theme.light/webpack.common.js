@@ -33,7 +33,15 @@ module.exports = {
                         loader: MiniCssExtractPlugin.loader
                       },
                       'css-loader',
-                      'less-loader'
+                                            {
+                                                loader: 'less-loader',
+                                                options: {
+                                                    lessOptions: {
+                                                        rewriteUrls: 'off',
+                                                        paths: [path.resolve(__dirname, 'semanticui')]
+                                                    }
+                                                }
+                                            }
                     ]
                 },
                  // this rule handles images

@@ -76,8 +76,5 @@
 @msgWarningBackgroundColor: @yellow;
 
 /* Resource Paths */
-
-/* For source only. Modified in gulp for dist */	
-@imagePath : '../resources/assets/images';	//Brand
-@fontPath  : '../resources/assets/fonts';	//Brand
-
+@imagePath : "../assets/images";
+@fontPath  : "../assets/fonts";
