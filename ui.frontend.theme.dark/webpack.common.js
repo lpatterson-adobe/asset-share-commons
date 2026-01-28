@@ -8,7 +8,8 @@ const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
 module.exports = {
         resolve: {
             alias: {
-                '../../theme.config$': path.join(__dirname, 'semanticui/theme.config')  
+                '../../theme.config$': path.join(__dirname, 'semanticui/theme.config'),
+                'theme.config$': path.join(__dirname, 'semanticui/theme.config')
             }
         },
         entry: {
