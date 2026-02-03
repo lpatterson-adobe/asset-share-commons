@@ -46,7 +46,7 @@
             <plugin>
                 <groupId>org.apache.jackrabbit</groupId>
                 <artifactId>filevault-package-maven-plugin</artifactId>
-                <configuration>
+                <configuration combine.self="override">
                     <group>${package.group}</group>
                     <name>asset-share-commons.ui.content</name>
                     <packageType>content</packageType>
@@ -58,6 +58,26 @@
                             <version>${project.version}</version>
                         </dependency>
                     </dependencies>
+                    <validatorsSettings>
+                        <jackrabbit-filter>
+                            <options>
+                                <validRoots>/,/var,/tmp,/content,/content/dam,/home,/home/users,/home/users/system,/home/groups,/conf,/conf/global</validRoots>
+                            </options>
+                        </jackrabbit-filter>
+                        <jackrabbit-docviewparser>
+                            <options>
+                                <allowUndeclaredPrefixInFileName>true</allowUndeclaredPrefixInFileName>
+                            </options>
+                        </jackrabbit-docviewparser>
+                        <jackrabbit-nodetypes>
+                            <options>
+                                <cnds>tccl:aem.cnd</cnds>
+                            </options>
+                        </jackrabbit-nodetypes>
+                    </validatorsSettings>
+                    <properties>
+                        <cloudManagerTarget>none</cloudManagerTarget>
+                    </properties>
                 </configuration>
             </plugin>
             <plugin>
