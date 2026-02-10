@@ -9,6 +9,8 @@
 *******************************/
 
 /* Button */
+/* Disable color-variation generation to avoid relying on missing palette tokens during dark theme build */
+@variationButtonColors: false;
 @variationButtonDisabled: false;
 @variationButtonAnimated: false;
 @variationButtonInverted: false;
@@ -36,6 +38,7 @@
 @variationContainerJustified: false;
 
 /* Divider */
+@variationDividerColors: false;
 @variationDividerInverted: false;
 @variationDividerHorizontal: false;
 @variationDividerVertical: false;
@@ -47,6 +50,7 @@
 @variationDividerSizes: false;
 
 /* Header */
+@variationHeaderColors: false;
 @variationHeaderDisabled: false;
 @variationHeaderInverted: false;
 @variationHeaderSub: false;
@@ -62,6 +66,7 @@
 @variationHeaderSizes: false;
 
 /* Icon */
+@variationIconColors: false;
 @variationIconDisabled: false;
 @variationIconInverted: false;
 @variationIconLoading: false;
@@ -91,6 +96,7 @@
 @variationImageSizes: mini;
 
 /* Input */
+@variationInputColors: false;
 @variationInputDisabled: false;
 @variationInputInverted: false;
 @variationInputStates: false;
@@ -104,6 +110,7 @@
 @variationInputSizes: big;
 
 /* Label */
+@variationLabelColors: false;
 @variationLabelDisabled: false;
 @variationLabelInverted: false;
 @variationLabelImage: false;
@@ -139,6 +146,7 @@
 @variationListSizes: false;
 
 /* Loader */
+@variationLoaderColors: false;
 @variationLoaderSpeeds: false;
 @variationLoaderIndeterminate: true;
 @variationLoaderText: true;
@@ -170,6 +178,7 @@
 @variationRevealSizes: false;
 
 /* Segment */
+@variationSegmentColors: false;
 @variationSegmentInverted: false;
 @variationSegmentDisabled: false;
 @variationSegmentVertical: false;
@@ -194,6 +203,7 @@
 @variationSegmentSizes: false;
 
 /* Step */
+@variationStepColors: false;
 @variationStepInverted: false;
 @variationStepDisabled: false;
 @variationStepStackable: false;
@@ -204,6 +214,7 @@
 @variationStepSizes: false;
 
 /* Text */
+@variationTextColors: false;
 @variationTextInverted: false;
 @variationTextDisabled: false;
 @variationTextSizes: false;
@@ -221,14 +232,15 @@
 @variationFormInverted: false;
 @variationFormDisabled: true;
 @variationFormTransparent: false;
-@variationFormLoading: true;
-@variationFormStates: true;
-@variationFormRequired: true;
-@variationFormInline: true;
-@variationFormGrouped: true;
+@variationFormLoading: false;
+@variationFormStates: false;
+@variationFormRequired: false;
+@variationFormInline: false;
+@variationFormGrouped: false;
 @variationFormSizes: false;
 
 /* Grid */
+@variationGridColors: false;
 @variationGridInverted: false;
 @variationGridPage: false;
 @variationGridCelled: false;
@@ -246,6 +258,7 @@
 @variationGridCompact: false;
 
 /* Menu */
+@variationMenuColors: false;
 @variationMenuInverted: true;
 @variationMenuSecondary: true;
 @variationMenuPointing: false;
@@ -265,6 +278,7 @@
 @variationMenuSizes: false;
 
 /* Message */
+@variationMessageColors: false;
 @variationMessageInverted: false;
 @variationMessageCompact: false;
 @variationMessageAttached: false;
@@ -274,6 +288,7 @@
 @variationMessageSizes: false;
 
 /* Table */
+@variationTableColors: false;
 @variationTableInverted: false;
 @variationTableDisabled: false;
 @variationTableDefinition: false;
@@ -318,6 +333,7 @@
 @variationAdTest: false;
 
 /* Card */
+@variationCardColors: false;
 @variationCardInverted: false;
 @variationCardHorizontal: false;
 @variationCardRaised: false;
@@ -329,12 +345,14 @@
 @variationCardSizes: false;
 
 /* Comment */
+@variationCommentColors: false;
 @variationCommentInverted: false;
 @variationCommentThreaded: false;
 @variationCommentMinimal: false;
 @variationCommentSizes: false;
 
 /* Feed */
+@variationFeedColors: false;
 @variationFeedInverted: false;
 @variationFeedSizes: false;
 
@@ -348,6 +366,7 @@
 @variationItemSizes: false;
 
 /* Statistic */
+@variationStatisticColors: false;
 @variationStatisticInverted: false;
 @variationStatisticStackable: false;
 @variationStatisticFloated: false;
@@ -368,6 +387,7 @@
 @variationCalendarDisabled: true;
 
 /* Checkbox */
+@variationCheckboxColors: false;
 @variationCheckboxBox: true;   //.box (instead of label) is an ancient fragment of sui v1 and not even documented in v2.x anymore
 @variationCheckboxDisabled: true;
 @variationCheckboxInverted: true;
@@ -427,7 +447,11 @@
 @variationModalCloseInside: false;
 @variationModalSizes: false;
 
+/* Nag */
+@variationNagColors: false;
+
 /* Popup */
+@variationPopupColors: false;
 @variationPopupInverted: true;
 @variationPopupTooltip: true;
 @variationPopupPosition: true;
@@ -445,6 +469,7 @@
 @variationPopupSizes: false;
 
 /* Progress */
+@variationProgressColors: false;
 @variationProgressInverted: false;
 @variationProgressDisabled: false;
 @variationProgressIndicating: false;
@@ -462,6 +487,7 @@
 @variationProgressSizes: false;
 
 /* Rating */
+@variationRatingColors: false;
 @variationRatingDisabled: false;
 @variationRatingSizes: false;
 
@@ -494,6 +520,7 @@
 @variationSidebarUncover: true;
 
 /* Slider */
+@variationSliderColors: false;
 @variationSliderInverted: false;
 @variationSliderDisabled: false;
 @variationSliderReversed: false;
@@ -507,6 +534,7 @@
 @variationTabLoading: false;
 
 /* Toast */
+@variationToastColors: false;
 @variationToastInverted: false;
 @variationToastTop: false;
 @variationToastBottom: false;
@@ -529,6 +557,7 @@
 @variationToastAttached: false;
 
 /* Loading */
+@variationTransitionColors: false;
 @variationTransitionDisabled: false;
 @variationTransitionLoading: false;
 

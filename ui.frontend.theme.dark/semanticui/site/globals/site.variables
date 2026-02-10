@@ -27,13 +27,24 @@
 
 /* Ensure key color tokens are defined even when defaults shift */
 @red: #db2828;
-@lightBlack: #545454;
+@orange: #f2711c;
+@yellow: #fbbd08;
+@olive: #b5cc18;
+@green: #21ba45;
+@teal: #00b5ad;
+@blue: #2185d0;
+@violet: #6435c9;
+@purple: #a333c8;
+@pink: #e03997;
+@brown: #a5673f;
+@grey: #767676;
 @black: #1b1c1d;
+
+@lightBlack: #545454;
 @fullBlack: #000;
 @offBlack: #2f2f2f;
 @midBlack: #3b3b3b;
 @midGrey: #d0d0d0;
-@grey: #767676;
 @offWhite: #f9fafb;
 
 /*******************************
@@ -403,8 +414,8 @@
 /* Resource Paths */ 
 
 /* For source only. Modified in gulp for dist */	
-@imagePath : '../../../assets/resources/images';	//Brand
-@fontPath  : '../../../assets/resources/fonts';	//Brand
+@imagePath : '../assets/images';	//Brand
+@fontPath  : '../assets/fonts';	//Brand
 
 
 /*-------------------
@@ -464,5 +475,5 @@
 /* Resource Paths */
 
 /* For source only. Modified in gulp for dist */	
-@imagePath : '../resources/assets/images';	//Brand
-@fontPath  : '../resources/assets/fonts';	//Brand
+@imagePath : '../assets/images';	//Brand
+@fontPath  : '../assets/fonts';	//Brand
