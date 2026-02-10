@@ -20,7 +20,21 @@
          Theme Variables
 *******************************/
 
+/* Pull in default Fomantic color and size tokens so custom overrides below have a base palette (e.g. @red). */
+@import (multiple) "../../themes/default/globals/site.variables";
+
 @import "variation.variables";
+
+/* Ensure key color tokens are defined even when defaults shift */
+@red: #db2828;
+@lightBlack: #545454;
+@black: #1b1c1d;
+@fullBlack: #000;
+@offBlack: #2f2f2f;
+@midBlack: #3b3b3b;
+@midGrey: #d0d0d0;
+@grey: #767676;
+@offWhite: #f9fafb;
 
 /*******************************
          Site Settings
